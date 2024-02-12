@@ -17,7 +17,7 @@ import java.util.Optional;
 @RequestMapping(path = "/persons")
 public class PersonController {
 
-    private PersonRepository personRepository;
+    private final PersonRepository personRepository;
 
     public PersonController(PersonRepository personRepository) {
         this.personRepository = personRepository;
